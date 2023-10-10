@@ -12,7 +12,10 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
-
+const append = "je";
+for (const name of names) {
+    console.log(name + append)
+}
 
 
 
@@ -30,8 +33,15 @@ const numbers = [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
 
-
-
+for (const number of numbers) {
+    if(number%2 === 0) {
+        console.log(number * 2)
+    }
+    else if(number%2 !== 0) {
+        console.log(number * 3)
+    }
+}
+console.log("\n")
 
 
 // ==========================================
@@ -44,6 +54,9 @@ const numbers = [2, 4, 5, 29, 38];
 
 const squares = [30, 2, 8, 24, 11];
 
+for (const square of squares) {
+    console.log("het volume van "+square+" = "+square**3)
+}
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(squares) geeft: [30, 2, 8, 24, 11];
