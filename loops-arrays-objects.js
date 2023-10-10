@@ -16,9 +16,11 @@ const scores = [
 // 66ç
 // ==========================================
 
+for (let i = 0; i <= scores.length-1; i++) {
+    console.log(scores[i].score);
+}
 
-
-
+console.log("\n")
 
 // ==========================================
 // Opdracht 1b
@@ -31,6 +33,21 @@ const scores = [
 // A
 // D
 // ==========================================
+for (let i = 0; i < scores.length; i++) {
+    const score = scores[i].score;
+
+    if (score<60){
+        console.log("F");
+    }else if(score<70) {
+        console.log("D");
+    }else if(score<80) {
+        console.log("C");
+    }else if(score<90) {
+        console.log("B");
+    }else if(score<100) {
+        console.log("A");
+    }
+}
 
 
 
